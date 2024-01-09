@@ -1,4 +1,4 @@
-*{
+ *{
           margin: 0;
           padding: 0;
           box-sizing: border-box;
@@ -20,13 +20,14 @@
  .xyz{
         height: auto;
         width: 500px;
-        background-color:rgb(140, 196, 221);
+        background-color:#00b4d8;
         border-radius: 6px;
+        border: 2px solid black;
  }
  .heading{
         align-items: center;
         margin-left: 90px;
-        color: rgb(47, 46, 46);
+        color: #fff;
  }
  h1{
           margin-top: 30px;
@@ -40,7 +41,7 @@
  }
  .btn{
           color: #fff;
-          background-color:cornflowerblue;
+          background-color:#5E2BFF;
           cursor: pointer;
           border-radius: 5px;
           font-size:12px ;
@@ -100,12 +101,32 @@
  }
  
  .rate{
-          color: black;
+          color: #ea4112;
           font-weight:700;
           font-size: 15px;
           padding: 0 10px;
           margin-right: 40px;
 
+ }
+ @media (max-width:515px)
+ {
+       .xyz{
+              height: auto;
+              width:450px;
+              
+       }
+ }
+ @media (max-width:463px)
+ {
+       .xyz{
+              height: auto;
+              width:400px;
+              
+       }
+       .heading{
+              margin-left: 35px;
+              
+       }
  }
  select:focus,input:focus,button:focus{
           outline:0;
@@ -118,14 +139,12 @@
  }
  @media (max-width:435px)
  {
-       .currency select{
-              font-size: 15px;
-              margin-left: 40px;
+       .heading{
+              align-items: center;
+              margin-left: 30px;
+              
        }
-       .swap-rate-container{
-              margin-left: 80px;
-       }
-       p{
-              font-size: 12px;
-       }
+       .money-img{
+              margin-left: 120px
+     }
  }
